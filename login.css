@@ -1,0 +1,336 @@
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+
+@font-face {
+    font-family: "NanumSquareNeo-Variable";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    background-color: ;
+}
+
+/* reset */
+h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+a {
+    font-style: initial;
+    color: initial;
+    text-decoration: none;
+}
+
+input {
+    border: initial;
+    background-color: initial;
+    padding: initial;
+}
+
+button {
+    border: initial;
+    background-color: initial;
+}
+
+/* style */
+body {
+    background-color: #f2f2f2;
+}
+
+fieldset {
+    border: initial;
+    margin: 0;
+    padding: 0;
+}
+
+.login-section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+    height: 240px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: "NanumSquareNeo-Variable", "sans-serif";
+}
+
+.login-logo {
+    width: 138px;
+}
+
+.login-title {
+    margin-bottom: 32px;
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    background-color: #2f80ed;
+    color: white;
+    padding: 17px 0 15px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.modal-section {
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 30%);
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    font-family: "NanumSquareNeo-Variable", "sans-serif";
+    /* display: none; */
+    position: fixed;
+    z-index: 10;
+    background-color: #ffffff;
+    position: absolute;
+    width: 520px;
+}
+
+.modal-title {
+    text-align: center;
+    padding: 19px 0 18px;
+    font-size: 50px;
+    background-color: #ffffff;
+    color: #243c40;
+}
+
+.modal-close {
+    position: absolute;
+    background-image: url("img/close.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: 0;
+    margin: 22px 24px;
+    cursor: pointer;
+}
+
+.modal-login {
+    padding: 26px 23px 24px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.login-input h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+#login-id,
+#login-pw {
+    width: 75%;
+    height: 54px;
+    padding-left: 15px;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#login-state {
+    display: none;
+}
+
+#login-state + label::before {
+    content: "";
+    display: inline-block;
+    background-image: url("img/check-box.png");
+    background-size: 15px 16px;
+    width: 15px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#login-state:checked + label::before {
+    background-image: url("img/check-box-on.png");
+}
+
+.submit-button {
+    display: block;
+    background-color: #233d40;
+    color: white;
+    width: 130px;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+.login-find {
+    text-align: center;
+    font-size: 20px;
+    margin: 45px;
+}
+
+.login-find a {
+    color: #4a4a4a;
+}
+
+.find-id::after {
+    content: "";
+    height: 1px;
+    border-left: 1px solid #767676;
+    margin: 0 12px;
+}
+
+.login-sns {
+    position: relative;
+    text-align: center;
+    width: 375px;
+    height: 47 px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.login-or {
+    color: #767676;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+/* .login-or::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: '';
+    border-top: 1px solid #4a4a4a;
+    width: 100%;
+    margin-bottom: 20px;
+} */
+
+/* .login-or::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    border-top: 1px solid #4a4a4a;
+    width: 45%;
+} */
+
+[class^="sns"] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 14px 0 14px;
+    box-sizing: border-box;
+    color: #000000;
+    line-height: 18px;
+}
+
+.sns-google {
+    color: black;
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    background-color: #fffefe;
+}
+
+.sns-facebook {
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    background-color: #fffefe;
+}
+
+.sns-naver {
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    background-color: #fffefe;
+}
+
+.sns-kakao {
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    background-color: #fffefe;
+}
+
+[class^="sns"]::before {
+    background-position: -4px -5px;
+    position: absolute;
+    display: flex;
+    content: "";
+    width: 22px;
+    height: 22px;
+    margin-left: 11px;
+    background-image: url("img/css_sprites_x2.png");
+    background-size: 28px;
+}
+
+.sns-google::before {
+    background-position: -5px -88px;
+}
+
+.sns-facebook::before {
+    background-position: -5px -60px;
+}
+
+.sns-naver::before {
+    background-position: -5px -32px;
+}
+
+ㅎ .sns-kakao::before {
+    background-position: -5px -5px;
+}
+
+/* 숨기기 */
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.choi {
+    display: flex;
+    justify-content: center;
+}
+
+.choi2 {
+    margin-left: 73px;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.loginState {
+    font-size: 15px;
+}
+
+.title {
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.modal-section {
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 30%);
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 520px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    /* display: none; */
+    position: fixed;
+    z-index: 10;
+}
